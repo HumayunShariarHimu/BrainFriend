@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.box {
+  max-width: 900px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  padding: 0 20px;
+}
+.title {
+  font-size: 29px;
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+button {
+  border: none;
+  background: blue;
+  padding: 12px 20px;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#next-btn {
+}
+#prev-btn {
+}
+#show-btn {
+  display: none;
+}
+.result-section {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  overflow-y: scroll;
+  display: none;
+}
+
+.all-result {
+  height: 100%;
+  max-width: 800px;
+  padding: 10px 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.all-result li {
+  transition: 0.3s;
+}
+
+.all-result li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+  border-bottom: 1px solid #fff;
+}
+.all-result li:hover {
+  background-color: green;
+}

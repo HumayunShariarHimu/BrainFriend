@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="BrainFriend - A Psychological Assistant for your Brain">
+  <meta name="keywords" content="BrainFriend">
+  <meta name="author" content="Humayun Shariar Himu">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BrainFriend - A Psychological Assistant for your Brain" />
+  <meta property="og:description" content="BrainFriend - A Psychological Assistant for your Brain" />
+  <meta property="og:image" content="./preview.jpg" />
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <link rel="shortcut icon" type="image/x-icon" href="./BrainFriend.png" />
+  <link rel="stylesheet" href="./brainfriend_style_one.css">
+  <link rel="stylesheet" href="./brainfriend_style_two.css">
+  <link rel="stylesheet" href="./glowing_style.css">
+  <link rel="stylesheet" href="./brainfriend-min.css" />
+</head>
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="container">
+    <div class="mymoon mlow">
+    </div>
+    <p style="font-size: 85px" class="heading glow">BrainFriend</p>
+    <p style="font-size: 50px" class="heading glow">A Psychological Assistant for your Brain</p>
+    <div id='intro'>
+      <center>
+        <!-- Background & container holding all visible items -->
+        <div class="">
+          <!-- Paper base -->
+          <div class="page">
+            <p style="font-size: 45px" class="message" id="message"></p>
+            <!-- Paper holes -->
+            <!-- Paper lines -->
+          </div>
+        </div>
+        <br>
+        <p>&nbsp;&nbsp;&nbsp;</p>
+        <br>
+        <a href="./BrainFriend.html">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <h2 style="font-size: 35px" class="heading glow">Discover</h2>
+        </a>
+
+    </div>
+
+  </div>
+  <script>
+    // Message to be displayed
+    const msg = "Let's Get The Best Psychological Suggestion! ";
+    let i = 0;
+    let delay = 30;
+    function typeWriter() {
+      if (i < msg.length) {
+        document.getElementById("message").innerHTML += msg.charAt(i);
+        i++;
+        setTimeout(typeWriter, delay);
+      }
+    }
+    typeWriter();
+  </script>
+  <div class="icon-list">
+    <a class="BrainBuzz br-link" href="./HappyBrain.html" target="_blank"><img class="br-img" src="./HappyBrain.gif"
+        alt="HappyBrain" width="30px;" height="30px"></a>
+  </div>
+  <!-- partial -->
+
+  <!-- iframe js -->
+  <script src="./iframe.js"></script>
+</body>
+
+</html>
