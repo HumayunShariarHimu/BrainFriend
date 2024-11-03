@@ -6,8 +6,8 @@
 }
 body {
   background-color: black;
-  color: white;
-  font-family: "Poppins", sans-serif;
+  color: lime;
+  font-family: "Georgia", serif;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -32,7 +32,7 @@ body {
 }
 button {
   border: none;
-  background: blue;
+  background: red;
   padding: 12px 20px;
   color: white;
   font-weight: 600;
